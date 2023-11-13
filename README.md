@@ -1,5 +1,6 @@
-# MPI-Numeric
-This repository contains how to execute a numeric program in python using MPI with an Ubuntu Master &amp; 3 Ubuntu Slave
+# MPI-BubbleSort
+
+This repository contains how to execute a bubble sort program in python using MPI with an Ubuntu Master &amp; 3 Ubuntu Slave
 
 # Things to be prepared:
 
@@ -8,15 +9,15 @@ This repository contains how to execute a numeric program in python using MPI wi
 3. MPI (Master and Slaves)
 4. SSH (Master and Slaves)
 5. NFS (Master and Slaves)
-6. Coding of Bubble Sort
+6. Bubble Sort Coding
 
 # Topology Flowchart
-![image](https://github.com/AlanZanefate/Mpi-Bubblesort/assets/150001943/a09f1797-ae51-40b4-b754-6bca89565945)
+![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/5ecd1689-7c0e-47a2-9b67-309ded47b291)
 
 # /etc/hosts File Configuration
-1. Ensure that the all of the Ubuntu Desktop uses Network Bridged Adapter, and that each Master and Slave is connected to the internet with known IP configurations.
+1. Ensure that the Ubuntu Desktop installation uses Network Bridged Adapter, and that each Master and Slave is connected to the internet with known IP configurations.
 2. Execute the command to modify the /etc/hosts file as shown in the image below.
-![2](https://github.com/AlanZanefate/Mpi-Bubblesort/assets/150001943/33e98f42-95b7-4f2a-b795-b3523055f75a)
+![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/b1993c83-0277-4c6d-9f27-292465fff1e5)
 
 3. Next, configure the /etc/hosts file following the instructions in the image below.
 ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/ea96bb41-d543-46d0-b15a-eea0b2f9842b)
@@ -84,46 +85,25 @@ This repository contains how to execute a numeric program in python using MPI wi
 
    ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/fb3a13d3-ea11-4473-aa80-2ce6d61d030b)
 
-# Numeric Program Execution
-1. To activate the numeric program execution, begin by installing MPI on both the Ubuntu Master and Server using the following commands.
+# MPI
+1. On Ubuntu Master and Slaves, install MPI with the following command.
 
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/ff8773b4-d3d4-490d-a7a4-d126e2979522)
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/5807eea2-0919-471f-a222-80991acaf134)
 
-2. Next, on the Ubuntu Master, create a new Python file in the shared folder using the command below.
+2. Next, on Ubuntu Master, create a Python file in the shared folder with the following command.
 
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/15aa7f25-ff6e-45fc-a188-4186d0b262a0)
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/6dca31fa-e698-4d00-a8a4-f8fbb68392df)
+   
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/e3f05544-5f2a-434b-b875-17959fb83b07)
 
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/9303ff96-5cbc-4cd6-b9f8-4237a2706350)
+4. Before executing the Bubble Sort code, test MPI with the following command.
 
-3. Ensure that the installation of NumPy has been completed before executing the numeric program.
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/1f42677e-93c3-484c-b0a0-8d227652c41a)
 
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/758cdcfc-1fe1-4397-9542-bdea5a6fc0c6)
+5. Add the Bubble Sort code to the Python file with the following command.
 
-4. Before running the numeric code, perform MPI testing first with the following command.
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/50f2d251-0953-4222-873f-970fa39a95ae)
 
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/7ed5fd0b-78ae-41fe-ac9f-15a26fdd8158)
+6. Run the file with the following command to produce the expected output.
 
-5. Add the numeric code to the previously created Python file using the command below.
-
-   ![image](https://github.com/donavail/mpi-numeric/assets/150001914/340615a5-3807-466a-b8a8-09e68bdfc769)
-
-6. Finally, run the file using the following command to generate the following outputs:
-   - Execution without MPI
-
-     ![image](https://github.com/donavail/mpi-numeric/assets/150001914/93c0ae10-2345-42d0-9d6c-0f3f7f8054b1)
-
-   - Execution with MPI Master Only
-  
-     ![image](https://github.com/donavail/mpi-numeric/assets/150001914/1afdbcb0-d435-44de-a920-d28390e7a2d2)
-
-   - Execution with MPI Master & Slave1
-  
-     ![image](https://github.com/donavail/mpi-numeric/assets/150001914/cff2a884-5d68-463c-a16d-886dc0afa6e4)
-
-   - Execution with MPI Master, Slave1, & Slave2
-  
-     ![image](https://github.com/donavail/mpi-numeric/assets/150001914/8a9eadfa-1555-4b46-93d9-434c4abb9392)
-
-   - Execution with MPI Master, Slave1, Slave2, & Slave3
-  
-     ![image](https://github.com/donavail/mpi-numeric/assets/150001914/14780ad2-cc5f-4367-aa9b-ff0ee8cf223a)
+   ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/157ab7d9-b9f4-48e7-8939-6ed28b6c4424)
