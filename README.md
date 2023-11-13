@@ -8,15 +8,15 @@ This repository contains how to execute a numeric program in python using MPI wi
 3. MPI (Master and Slaves)
 4. SSH (Master and Slaves)
 5. NFS (Master and Slaves)
-6. Bubble Sort Coding
+6. Coding of Bubble Sort
 
 # Topology Flowchart
-![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/5ecd1689-7c0e-47a2-9b67-309ded47b291)
+![image](https://github.com/AlanZanefate/Mpi-Bubblesort/assets/150001943/a09f1797-ae51-40b4-b754-6bca89565945)
 
 # /etc/hosts File Configuration
-1. Ensure that the Ubuntu Desktop installation uses Network Bridged Adapter, and that each Master and Slave is connected to the internet with known IP configurations.
+1. Ensure that the all of the Ubuntu Desktop uses Network Bridged Adapter, and that each Master and Slave is connected to the internet with known IP configurations.
 2. Execute the command to modify the /etc/hosts file as shown in the image below.
-![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/b1993c83-0277-4c6d-9f27-292465fff1e5)
+![2](https://github.com/AlanZanefate/Mpi-Bubblesort/assets/150001943/33e98f42-95b7-4f2a-b795-b3523055f75a)
 
 3. Next, configure the /etc/hosts file following the instructions in the image below.
 ![image](https://github.com/donavail/mpi-bubblesort/assets/150001914/ea96bb41-d543-46d0-b15a-eea0b2f9842b)
